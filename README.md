@@ -18,7 +18,7 @@ Aliases: `/dlp`, `/dlpatch`, `/dripleaf`
 | `/dripleafpatch toggle <module> [on\|off]` | Toggle individual protection modules in real time | `dripleafpatch.toggle` |
 | `/dripleafpatch set <setting> <value>` | Change `cleanup-mode` or `purge-action` modes | `dripleafpatch.set` |
 | `/dripleafpatch status` | Display current status of all protection layers | `dripleafpatch.status` |
-| `/dripleafpatch reload` | Reload `config.yml` from disk | `dripleafpatch.reload` |
+| `/dripleafpatch reload` | Reload `config.yml` | `dripleafpatch.reload` |
 
 - **`dripleafpatch.admin`** *(default: `op`)* — Grants full access to all commands and the control panel.
 - **`dripleafpatch.notify`** *(default: `op`)* — Receives real-time chat and sound alerts when an exploit attempt is blocked.
