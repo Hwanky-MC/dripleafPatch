@@ -1,0 +1,47 @@
+name: DripleafPatch
+version: 1.1.0
+main: com.hwanky.dripleafpatch.DripleafPatchPlugin
+api-version: '1.21'
+author: hwanky
+description: Lightweight fix for Small Dripleaf captureTreeGeneration dupe and Shulker Box nesting.
+folia-supported: true
+
+commands:
+  dripleafpatch:
+    description: Manage DripleafPatch modules and settings
+    aliases:
+      - dlp
+      - dlpatch
+      - dripleaf
+    permission: dripleafpatch.admin
+    usage: /<command> [panel|toggle|set|status|reload|help]
+
+permissions:
+  dripleafpatch.admin:
+    description: Full access to all DripleafPatch commands and GUI panel.
+    default: op
+    children:
+      dripleafpatch.panel: true
+      dripleafpatch.toggle: true
+      dripleafpatch.set: true
+      dripleafpatch.reload: true
+      dripleafpatch.status: true
+      dripleafpatch.notify: true
+  dripleafpatch.panel:
+    description: Access the interactive module control GUI.
+    default: op
+  dripleafpatch.toggle:
+    description: Toggle protection modules on or off via command.
+    default: op
+  dripleafpatch.set:
+    description: Modify plugin settings via command.
+    default: op
+  dripleafpatch.reload:
+    description: Reload configuration from disk.
+    default: op
+  dripleafpatch.status:
+    description: View current status of all protection modules.
+    default: op
+  dripleafpatch.notify:
+    description: Receive real-time alerts when an exploit attempt is blocked.
+    default: op

@@ -1,0 +1,48 @@
+# DripleafPatch Configuration
+# Author: hwanky
+
+log-attempts: true
+notify-admins: true
+
+alert-sound:
+  enabled: true
+  sound: "BLOCK_NOTE_BLOCK_BASS"
+  volume: 1.0
+  pitch: 0.6
+
+gui-sound:
+  enabled: true
+  toggle-sound: "UI_BUTTON_CLICK"
+  volume: 0.8
+  pitch: 1.2
+
+dripleaf-fix:
+  enabled: true
+  cleanup-illegal-blocks: true
+  # Options: NATURAL, DESTROY
+  cleanup-mode: "NATURAL"
+
+shulker-nesting-fix:
+  enabled: true
+  block-inventory-click: true
+  block-hopper-transfer: true
+  block-dispenser-dispense: true
+  sanitize-on-open: true
+  sanitize-on-place: true
+  sanitize-on-pickup: true
+  # Options: DROP, DESTROY
+  purge-action: "DROP"
+
+messages:
+  prefix: "<gradient:#00ff88:#00b4d8><b>DripleafPatch</b></gradient> <dark_gray>|</dark_gray> "
+  no-permission: "<prefix><red>You do not have permission to do that."
+  player-only: "<prefix><red>This command can only be executed by a player."
+  reload-success: "<prefix><green>Configuration reloaded in <white><time>ms</white>."
+  module-toggled: "<prefix><gray>Module <aqua><module></aqua> is now <status><gray>."
+  setting-updated: "<prefix><gray>Setting <aqua><setting></aqua> updated to <yellow><value></yellow>."
+  invalid-argument: "<prefix><red>Invalid argument. Usage: <yellow><usage></yellow>"
+
+  dripleaf-dupe-prevented: "<prefix><red>Blocked</red> <yellow><player></yellow> from fertilizing broken Small Dripleaf at <aqua><location></aqua>."
+  shulker-nesting-prevented: "<prefix><red>Blocked</red> <yellow><player></yellow> from nesting Shulker Box (<gold><method></gold>) at <aqua><location></aqua>."
+  dispenser-nesting-prevented: "<prefix><red>Blocked</red> Dispenser/Dropper from pushing Shulker Box into container at <aqua><location></aqua>."
+  shulker-purged: "<prefix><gold>Sanitized</gold> nested Shulker Box from <yellow><player></yellow> (<white><method></white>) at <aqua><location></aqua>."
